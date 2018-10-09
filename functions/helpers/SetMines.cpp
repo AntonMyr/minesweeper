@@ -5,7 +5,7 @@
 
 void setMines(int mines[], int amount) {
 
-  const unsigned int MINES_MIN = 0, MINES_MAX = 81;
+  const unsigned int MINES_MIN = 0, MINES_MAX = 80;
 
   srand(time(NULL));
   for(int i = 0; i < amount; i++) {
