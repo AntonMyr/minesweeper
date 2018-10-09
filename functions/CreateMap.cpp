@@ -12,8 +12,6 @@ void CreateMap(int map[], int width, int height) {
 
   initMap(map, mines);
 
-  // calcMines(map, mines, width, height);
-
-
+  calcMines(map, mines, width, height);
 
 }

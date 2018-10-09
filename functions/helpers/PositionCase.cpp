@@ -32,7 +32,7 @@ void positionCase(int option, int map[], int width, int mine) {
     map[mine + width - 1] = checkAndAdd(map[mine + width - 1]);
     break;
 
-    // Every element mid-top
+    // Every element mid-bottom
   case 4:
     map[mine-1] = checkAndAdd(map[mine-1]);
     map[mine+1] = checkAndAdd(map[mine+1]);
@@ -41,7 +41,7 @@ void positionCase(int option, int map[], int width, int mine) {
     map[mine + width + 1] = checkAndAdd(map[mine + width + 1]);
     break;
 
-    // Every element mid-bottom
+    // Every element mid-top
   case 5:
     map[mine - width - 1] = checkAndAdd(map[mine - width - 1]);
     map[mine - width] = checkAndAdd(map[mine - width]);
@@ -50,28 +50,28 @@ void positionCase(int option, int map[], int width, int mine) {
     map[mine+1] = checkAndAdd(map[mine+1]);
     break;
 
-    // Every element bottom-right corner
+    // Every element top-right corner
   case 6:
     map[mine - width] = checkAndAdd(map[mine - width]);
     map[mine - width + 1] = checkAndAdd(map[mine - width + 1]);
     map[mine+1] = checkAndAdd(map[mine+1]);
     break;
-    
-    // Every element bottom-left corner
+
+    // Every element top-left corner
   case 7:
     map[mine - width - 1] = checkAndAdd(map[mine - width - 1]);
     map[mine - width] = checkAndAdd(map[mine - width]);
     map[mine-1] = checkAndAdd(map[mine-1]);
     break;
 
-    // Every element top-left corner
+    // Every element bottom-left corner
   case 8:
     map[mine-1] = checkAndAdd(map[mine-1]);
     map[mine + width] = checkAndAdd(map[mine + width]);
     map[mine + width - 1] = checkAndAdd(map[mine + width - 1]);
     break;
 
-    // Every element top-right corner
+    // Every element bottom-right corner
   case 9:
     map[mine+1] = checkAndAdd(map[mine+1]);
     map[mine + width] = checkAndAdd(map[mine + width]);
