@@ -9,7 +9,12 @@ void setMines(int mines[], int amount) {
 
   srand(time(NULL));
   for(int i = 0; i < amount; i++) {
-    unsigned int minePosition = rand()%(MINES_MAX-MINES_MIN + 1) + MINES_MIN;
+    int j = 0;
+    int minePosition;
+    do {
+      minePosition = rand()%(MINES_MAX-MINES_MIN + 1) + MINES_MIN; 
+      j++;
+        } while(mines[j] != minePosition && j < i);
     mines[i] = minePosition;
   }
 }
