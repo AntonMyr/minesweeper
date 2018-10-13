@@ -6,11 +6,11 @@ functionsPath = ./functions/
 allFunctions = $(functionsPath)CheckForEnd.cpp $(functionsPath)CreateMap.cpp $(functionsPath)PresentMap.cpp $(functionsPath)UpdatePosition.cpp
 
 
-helpers = SetMines.o InitMap.o CalcMines.o PositionCase.o CheckAndAdd.o IsMine.o IsTaken.o GetPosition.o UpdateStatus.o InitTakenSquares.o
+helpers = SetMines.o InitMap.o CalcMines.o PositionCase.o CheckAndAdd.o IsMine.o IsTaken.o GetPosition.o UpdateStatus.o InitTakenSquares.o GetChar.o
 
 helpersPath = ./functions/helpers/
 
-allHelpers = $(helpersPath)SetMines.cpp $(helpersPath)InitMap.cpp $(helpersPath)CalcMines.cpp $(helpersPath)PositionCase.cpp $(helpersPath)CheckAndAdd.cpp $(helpersPath)IsMine.cpp $(helpersPath)IsTaken.cpp $(helpersPath)GetPosition.cpp $(helpersPath)UpdateStatus.cpp $(helpersPath)InitTakenSquares.cpp
+allHelpers = $(helpersPath)SetMines.cpp $(helpersPath)InitMap.cpp $(helpersPath)CalcMines.cpp $(helpersPath)PositionCase.cpp $(helpersPath)CheckAndAdd.cpp $(helpersPath)IsMine.cpp $(helpersPath)IsTaken.cpp $(helpersPath)GetPosition.cpp $(helpersPath)UpdateStatus.cpp $(helpersPath)InitTakenSquares.cpp $(helpersPath)GetChar.cpp
 
 output: main.o Functions.o Helpers.o
 	g++ main.o $(functions) $(helpers) -o output
