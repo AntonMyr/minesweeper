@@ -30,5 +30,4 @@ void PresentMap(int map[], bool takenSquares[], int width, int height) {
 
 
   }
-  // printMap(map, takenSquares, width, height);
 }

@@ -1,5 +1,4 @@
 #include <iostream>
-#include "../Functions.h"
 
 bool CheckForEnd(int map[], bool takenSquares[], int width, int height) {
   int mines = 0;
