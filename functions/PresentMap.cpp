@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include "../Functions.h"
 #include "../Helpers.h"
 
 void PresentMap(int map[], bool takenSquares[], int width, int height) {

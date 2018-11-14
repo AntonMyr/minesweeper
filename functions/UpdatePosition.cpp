@@ -5,16 +5,19 @@
 UpdateResult UpdatePosition(int map[], bool takenSquares[], int xCoord, int yCoord, int width, int height) {
 
   int position = getPosition(xCoord, yCoord, width);
+  UpdateResult returnValue;
 
   if(isMine(position, map)) {
     updateStatus(position, takenSquares);
-    return positionIsMine;
+    returnValue = positionIsMine;
   }
   else if(isTaken(position, takenSquares)) {
-    return positionIsTaken;
+    returnValue = positionIsTaken;
   }
   else {
     updateStatus(position, takenSquares);
-    return positionIsFree;
+    returnValue = positionIsFree;
   }
+
+  return returnValue;
 }

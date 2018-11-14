@@ -1,5 +1,4 @@
 #include <iostream>
-#include "../Functions.h"
 #include "../Helpers.h"
 
 void CreateMap(int map[], int width, int height) {

@@ -2,10 +2,13 @@
 #include "../../Helpers.h"
 
 bool isMine(int position, int map[]) {
+  bool returnValue;
   if(map[position] > -1) {
-    return false;
+    returnValue = false;
   }
   else {
-    return true;
+    returnValue = true;
   }
+
+  return returnValue;
 }
