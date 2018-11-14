@@ -47,5 +47,10 @@ int main() {
     std::cout << "\n\t\tYOU WON" << std::endl;
   }
 
+  std::cout << "\nPress ENTER to quit...";
+  std::cin.get();
+  std::cin.ignore();
+
   return 0;
+
 }
